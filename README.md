@@ -7,7 +7,7 @@ Remember that super cool trick you saw on Reddit a year ago and thought, "Wow, I
 
 Well, I have both of these problems. I made this plugin to help myself, maybe it can help you too.
 
-## Usage
+## Usage + Customization
 Simply enter the command `:HelpMe` to open the menu, find what you're looking for, then press `q` to close the menu. That's it.
 
 Of course, there won't be much in the menu until you add stuff to it. Use the following `.vimrc` entry as an guide for customizing your own menu:
@@ -26,6 +26,8 @@ let g:HelpMeItems = [
     \ ":H           insert nicely formatted header comment (custom)",
     \ ]
 ```
+
+By default, Vim will ignore all other input aside from `q` while HelpMe! is open. If you'd like to disable this, add `let g:HelpMeAllowInput = 1` to your `.vimrc`, this would allow you to operate Vim normally while the window is open. It'll cover up the center of your screen, but maybe this would be useful for someone.
 
 Optionally, you can map a shortcut to call `:HelpMe` with something like this:
 ```
