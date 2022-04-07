@@ -27,6 +27,13 @@ let g:HelpMeItems = [
     \ ]
 ```
 
+Optionally, you can map a shortcut to call `:HelpMe` with something like this:
+```
+nnoremap <silent> <C-h> :HelpMe<CR>
+```
+
+This would make `ctrl+h` to open the HelpMe! menu.
+
 ## Installation
 Add `helpme.vim` to your `~/.vim/plugin/` folder, or if you're using Vim-Plug, add `Plug 'leftbones/helpme-vim'` to your `.vimrc` file.
 
