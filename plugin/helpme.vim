@@ -24,9 +24,9 @@ if !exists('g:HelpMeItems')
     let g:HelpMeHeight = 4
     let g:HelpMeItems = [
     \ "Add items here by assigning a list to `let g:HelpMeItems` in your .vimrc file",
-    \ "See README.md at https://github.com/leftbones/helpme-vim for detailed instructions"
-    \ ""
-    \ "press 'q' to close"
+    \ "See README.md at https://github.com/leftbones/helpme-vim for detailed instructions",
+    \ "",
+    \ "press 'q' to close",
     \ ]
 else
     let g:HelpMeHeight = len(g:HelpMeItems)
